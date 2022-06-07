@@ -1,6 +1,7 @@
 ﻿/*Соколова Любовь*/
 using System;
-using System.Threading;
+using SupportLibrary;
+
 
 namespace Lesson_1
 {
@@ -187,31 +188,14 @@ namespace Lesson_1
             //DistanceBetweenPoints(1, 2, 3, 4);
             //Swap();
             //Swap(1, 6);
-            PersonData();
-            //Formatting fm = new Formatting();
-            //fm.Print("имя фамилия город! ", 1, 1);
-            //fm.Pause(10000);
+            //PersonData();
+            SupportCommand.Print("имя фамилия город! ", 1, 1);
+            SupportCommand.Pause(10000);
         }
     }
 
     /// <summary>
     /// 6. *Создать класс с методами, которые могут пригодиться в вашей учебе (Print, Pause).
     /// </summary>
-    class Formatting
-    {
-        public void Print(string ms, int x, int y)
-        { 
-            foreach (var s in ms)
-            {
-                Console.SetCursorPosition(x, y);
-                Console.WriteLine(s);
-                y = Console.CursorTop;
-            }
-        }
 
-        public void Pause(int ms)
-        {
-            Thread.Sleep(ms);
-        }
-    }
 }

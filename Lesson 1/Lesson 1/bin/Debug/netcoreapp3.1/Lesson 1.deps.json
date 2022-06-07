@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "Lesson 1/1.0.0": {
+        "dependencies": {
+          "SupportLibrary": "1.0.0"
+        },
         "runtime": {
           "Lesson 1.dll": {}
+        }
+      },
+      "SupportLibrary/1.0.0": {
+        "runtime": {
+          "SupportLibrary.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Lesson 1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SupportLibrary/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
